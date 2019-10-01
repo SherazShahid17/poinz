@@ -51,10 +51,6 @@ del([
   .then(() => fs.copy('./server/lib', './deploy/lib')) // copy transpiled backend files to deploy folder
   .then(() => fs.copy('./server/resources', './deploy/resources'))
   .then(() => fs.copy('./server/package.json', './deploy/package.json'))
-
-  // -- docker image
-  .then(getGitInformation)
-  .then(startBuildingDockerImage)
   .catch(error => {
     console.error(error);
     console.error(error.stack);
