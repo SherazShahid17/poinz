@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "core-js": "^3.2.1",
+    "cssesc": "^3.0.0",
     "indexes-of": "^1.0.1",
     "uniq": "^1.0.1"
   }
